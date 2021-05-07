@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: dev
+    include: param
+  aop:
+    proxy-target-class: false

@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    ##启动时指定：
+    active: dev
+#    application-dev1.properties中存储jdbc信息
+#    application-dev2.properties中存储ip、端口信息
+#    即在启用application-dev.properties开发环境（主）配置文件时，同时启用application-dev1.properties和application-dev2.propertie。
+#    那么，可以使用spring.profiles.include属性：同时启用其他的profile 下面的么用
+    include: param
+#  proxy-target-class 作用
+#  该属性值默认为false,表示使用JDK动态代理织入增强;当值为true时,表示使用CGLib动态代理织入增强;但是,即使设置为false,如果目标类没有生命接口,
+#
+#  则Spring将自动使用CGLib动态代理.(以上来自:Spring3.X企业应用开发实战 P229)
+
+
+#
+#通俗理解:
+#
+#  当要使用实现了某个接口的类让Spring来生成bean时,无需在aop配置中添加proxy-target-class,因为它默认为false.
+#
+#但如果要使用一个指定的类,让Spring来生成bean,并使用它的某个方法时,需要在aop配置上加上一句proxy-target-class="true",否则用JUnit时,会出现:
+#
+#java.lang.ClassCastException: com.sun.proxy.$Proxy6 cannot be cast to glut.daoImp2.DAOImp2
+#  proxy-target-class属性值决定是基于接口的还是基于类的代理被创建。如果proxy-target-class 属性值被设置为true，那么基于类的代理将起作用（这时需要cglib库）。如果proxy-target-class属值被设置为false或者这个属性被省略，那么将使用基于标准的JDK接口的代理。
+
+  aop:
+    proxy-target-class: false

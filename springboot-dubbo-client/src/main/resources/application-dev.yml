@@ -1,0 +1,11 @@
+server:
+  port: 9097
+  servlet:
+    context-path: /yiyun
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  tomcat:
+    uri-encoding: utf-8
+
