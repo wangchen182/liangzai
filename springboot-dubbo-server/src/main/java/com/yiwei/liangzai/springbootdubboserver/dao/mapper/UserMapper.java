@@ -1,7 +1,7 @@
 package com.yiwei.liangzai.springbootdubboserver.dao.mapper;
 
-import com.yiwei.liangzai.springbootdubboserver.dao.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import yiwei.liangzai.domain.User;
 
 /**
  * <p>

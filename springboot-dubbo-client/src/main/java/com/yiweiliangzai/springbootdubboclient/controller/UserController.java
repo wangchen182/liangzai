@@ -1,11 +1,11 @@
 package com.yiweiliangzai.springbootdubboclient.controller;
 
 
-import com.yiwei.liangzai.springbootdubboserver.dao.entity.User;
-import com.yiwei.liangzai.springbootdubboserver.dao.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import yiwei.liangzai.domain.User;
+import yiwei.liangzai.service.login.Login;
 
 import javax.annotation.Resource;
 
@@ -23,11 +23,11 @@ import javax.annotation.Resource;
 
 
 public class UserController {
-    @Resource
-    private UserService userService;
+    @Reference
+    private Login login;
 
     public User findAll() {
-        return userService.findAll();
+        return login.find();
     }
 }
 

@@ -1,10 +1,11 @@
 package com.yiweiliangzai.springbootdubboclient;
 
-import com.yiwei.liangzai.springbootdubboserver.dao.entity.User;
+
 import com.yiweiliangzai.springbootdubboclient.controller.UserController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import yiwei.liangzai.domain.User;
 
 @SpringBootTest
 class SpringbootDubboClientApplicationTests {

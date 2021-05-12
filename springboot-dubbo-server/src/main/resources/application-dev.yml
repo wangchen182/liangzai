@@ -4,7 +4,15 @@ spring:
   application:
     ##子模块名称
     name: springboot-dubbo-server
+  # dubbo
+  dubbo.application.name=boot-service-provider
+  dubbo.registry.address=192.168.205.128:2181
+  dubbo.registry.protocol=zookeeper
+  dubbo.protocol.name=dubbo
+  dubbo.protocol.port=20880
+  dubbo.monitor.protocol=registry
 
+  server.port=8080
   datasource:
     master:
       driver-class-name: com.mysql.jdbc.Driver
@@ -64,3 +72,4 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
+

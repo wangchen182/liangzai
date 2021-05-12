@@ -1,4 +1,4 @@
-package com.yiwei.liangzai.springbootdubboserver.dao.entity;
+package yiwei.liangzai.domain;
 
 import java.io.Serializable;
 
