@@ -9,7 +9,7 @@ import yiwei.liangzai.domain.User;
  * </p>
  *
  * @author wangchen
- * @since 2021-05-07
+ * @since 2021-05-13
  */
 public interface UserMapper extends BaseMapper<User> {
 

@@ -35,7 +35,7 @@ import java.util.Map;
 public class DruidConfig {
 
     //根据配置文件绑定属性，生成 DruidDataSource 组件 注入到ioc容器
-    @ConfigurationProperties(prefix = "spring.datasource.master")
+    @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
     public DataSource druid() {
         return new DruidDataSource();

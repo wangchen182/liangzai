@@ -11,6 +11,6 @@ public class DemoApplicationTests {
     public void contextLoads() {
         CodeGenerator gse = new CodeGenerator();
         //要给那些表生成
-       // gse.generateByTables(false,"");
+       gse.generateByTables(true,"user");
     }
 }

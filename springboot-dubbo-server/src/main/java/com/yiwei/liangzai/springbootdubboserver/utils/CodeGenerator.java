@@ -16,9 +16,9 @@ public class CodeGenerator {
     public static final String DRIVER = "com.mysql.jdbc.Driver";
     public static final String AUTHOR = "wangchen";
     //生成的文件输出到哪个目录
-    public static final String OUTPUT_FILE = "D:\\project\\liangzai\\springboot-dubbo-server\\src\\main\\java";
+    public static final String OUTPUT_FILE = "D:\\project\\liangzai\\springboot-dubbo-server\\src\\main\\resources";
     //包名，会按照com/example/demo这种形式生成类
-    public static final String PACKAGE = "com.yiwei.liangzai.springbootdubboserver.dao";
+    public static final String PACKAGE = "yiwei.liangzai.dubbo-api.domain";
     //TODO 更多配置请参考http://mp.baomidou.com/#/generate-code
 
     public void generateByTables(boolean serviceNameStartWithI, String... tableNames) {

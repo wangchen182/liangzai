@@ -2,6 +2,7 @@ package com.yiweiliangzai.springbootdubboclient.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import yiwei.liangzai.domain.User;
@@ -18,14 +19,14 @@ import javax.annotation.Resource;
  * @since 2021-05-07
  */
 @RestController
-@RequestMapping("/usser")
+@RequestMapping("/user")
 
 
 
 public class UserController {
     @Reference
     private Login login;
-
+@GetMapping("/user")
     public User findAll() {
         return login.find();
     }

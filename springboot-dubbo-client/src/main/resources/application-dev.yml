@@ -9,3 +9,13 @@ server:
   tomcat:
     uri-encoding: utf-8
 
+dubbo:
+  application:
+    name: springboot-dubbo-client
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+  consumer:
+    timeout: 3000
+  scan:
+    base-packages: com.yiweiliangzai.springbootdubboclient.controller
