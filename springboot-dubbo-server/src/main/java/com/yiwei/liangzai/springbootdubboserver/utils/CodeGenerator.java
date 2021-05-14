@@ -18,7 +18,7 @@ public class CodeGenerator {
     //生成的文件输出到哪个目录
     public static final String OUTPUT_FILE = "D:\\project\\liangzai\\springboot-dubbo-server\\src\\main\\resources";
     //包名，会按照com/example/demo这种形式生成类
-    public static final String PACKAGE = "yiwei.liangzai.dubbo-api.domain";
+    public static final String PACKAGE = "yiwei.liangzai.domain";
     //TODO 更多配置请参考http://mp.baomidou.com/#/generate-code
 
     public void generateByTables(boolean serviceNameStartWithI, String... tableNames) {

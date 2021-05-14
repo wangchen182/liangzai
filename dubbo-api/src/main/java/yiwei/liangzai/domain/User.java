@@ -10,9 +10,11 @@ import java.io.Serializable;
  * @author wangchen
  * @since 2021-05-07
  */
+
 public class User implements Serializable {
 
 private static final long serialVersionUID=1L;
+
 
     /**
      * 主键ID
@@ -33,6 +35,7 @@ private static final long serialVersionUID=1L;
      * 邮箱
      */
     private String email;
+
 
 
     public Long getId() {
